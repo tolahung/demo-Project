@@ -1,0 +1,31 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ẩn thanh cuộn trang */
+}
+
+.container {
+    width: 100%;
+    height: 100vh; /* Chiều cao 100% của màn hình */
+    overflow-y: scroll; /* Hiển thị thanh cuộn dọc */
+}
+
+.item {
+    width: 100%;
+    height: 100vh; /* Chiều cao 100% của màn hình */
+    background-color: #ccc; /* Màu nền của mục */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    transition: opacity 0.5s; /* Hiệu ứng mờ dần trong 0.5 giây */
+}
+
+.item:nth-child(even) {
+    background-color: #f0f0f0; /* Màu nền của các mục chẵn */
+}
+
+.item .hide {
+    opacity: 0; /* Ẩn mục bằng cách đặt opacity thành 0 */
+}

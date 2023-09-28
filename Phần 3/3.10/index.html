@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* Selector cấp bậc con cháu hậu duệ */
+        ul.list-item li{
+            color: red;
+        }
+
+        ul.list-item li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container h3{
+            color: aquamarine;
+        }
+
+
+        /* Selector theo cấp bặc cha con  */
+        .container>a{
+            text-decoration: none;
+        }
+
+        h1, p{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chao moi nguoi</h1>
+        <ul class="list-item">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>Base</li>
+            <li>Contact</li>
+            <li>Referece</li>
+        </ul>
+
+        <a href="">
+            <h3>Toi la hung</h3>
+        </a>
+
+        <label class="lb-name" for="name">Name</label>
+        <input type="text" id="name"> <br>
+        <label class="lb-add" for="address">Address</label>
+        <input type="text" id="address"> <br>
+
+        <h1>Chào</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, repellendus?</p>
+        
+    </div>
+</body>
+</html>

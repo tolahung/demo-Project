@@ -1,0 +1,173 @@
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root{
+    --test_color:rgb(241, 149, 149);
+    --bc_item:rgb(156, 145, 145);
+    --click_cate: rgb(231, 200, 131);
+}
+
+
+
+#wrapper{
+    width: 960px;
+    margin: 50px auto;
+    /* background-color: var(--test_color); */
+}
+
+
+/* =========CATEGORY======== */
+.category{
+    margin-top: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #8af793; */
+
+}
+
+
+.grid{
+    padding: 20px;
+}
+
+.grid img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.grid img:hover {
+    transform: scale(1.5);
+}
+
+/* =========CONTAINER======== */
+.container{
+    margin: 0 50px;
+    /* background-color: #7ecffd; */
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* -------Item------- */
+.item{
+    width: 100%;
+    background-color: var(--bc_item);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* Image */
+.img-item{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.img-item img{
+    width: 100%;
+}
+
+/* Inf-item */
+
+.des-item{
+    text-align: justify;
+    margin-bottom:20px ;
+}
+
+
+
+/* ============CLICK============== */
+
+input[name="grid"][value="1"]:checked ~ .container{
+    grid-template-columns: repeat(1, auto);
+}
+input[name="grid"][value="1"]:checked ~ .container .inf-item .des-item{
+        text-align: center;
+}
+
+input[name="grid"][value="2"]:checked ~ .container{
+    grid-template-columns: repeat(2, auto);
+}
+
+input[name="grid"][value="3"]:checked ~ .container{
+    grid-template-columns: repeat(3, auto);
+}
+
+input[name="grid"][value="4"]:checked ~ .container{
+    grid-template-columns: repeat(4, auto);
+}
+
+input{
+    display: none;
+}
+
+
+
+/* ======Tạo chuyên rđộng======== */
+@keyframes moveItem{
+    from{
+        opacity: 0;
+        transform: translate(0,10px);
+    } to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes moveItem2{
+    from{
+        opacity: 0;
+        transform: translate(0,10px);
+    } to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes moveItem3{
+    from{
+        opacity: 0;
+        transform: translate(0,10px);
+    } to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes moveItem4{
+    from{
+        opacity: 0;
+        transform: translate(0,10px);
+    } to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+
+
+input[name="grid"][value="1"]:checked ~ .container{
+    animation: moveItem 1s ease-in-out 1 forwards;
+}
+
+input[name="grid"][value="2"]:checked ~ .container{
+    animation: moveItem2 1s ease-in-out 1 forwards;
+}
+
+input[name="grid"][value="3"]:checked ~ .container{
+    animation: moveItem3 1s ease-in-out 1 forwards;
+}
+
+input[name="grid"][value="4"]:checked ~ .container{
+    animation: moveItem4 1s ease-in-out 1 forwards;
+}
+
+

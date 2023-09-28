@@ -1,0 +1,83 @@
+
+
+
+
+
+
+/* --------------------Home--------------------------------- */
+
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #303030;
+}
+
+/* --------------------Layout1--------------------------------- */
+
+
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.container-lo1{
+    width: 100%;
+    height: 550px;
+    background-color: #adabab;
+}
+
+nav{
+    background-color: #fc6464;
+    text-align: center;
+}
+
+footer{
+    background-color: #303030;
+    text-align: center;
+}
+
+
+p{
+    padding: 25px 0 ;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.content{
+    color: black;
+    position: relative;
+    padding: 0;
+    left: 20px;
+    top:10px;
+}
+
+/* --------------------Layout2--------------------------------- */
+
+.container-lo2{
+    width: 100%;
+}
+
+
+.content-lo2{
+    background-color: #888787;
+    height: 500px;
+}
+.content-lo2{
+    color: black;
+}
+
+/* --------------------Layout3--------------------------------- */
+
+.content-lo3{
+    
+}
+
+/* --------------------Layout1--------------------------------- */
+/* --------------------Layout1--------------------------------- */
+/* --------------------Layout1--------------------------------- */
+/* --------------------Layout1--------------------------------- */

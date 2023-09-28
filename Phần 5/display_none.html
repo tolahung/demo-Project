@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul.sub-menu{
+            display: none;
+        }
+
+        .main-menu li:hover .sub-menu{
+            display: block;
+        } */
+
+        header{
+            background-color: #ee9898;
+            height: 50px;
+            display: flex;
+        }
+
+        ul{
+            display: flex;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        li{
+            list-style: none;
+            margin-right: 20px;
+            font-weight:600 ;
+        }
+        
+        /* ------------Sub-menu------------- */
+
+        section{
+            display: none;
+            background-color: #e1e99a;
+    
+            margin-top: 5px;
+            /* margin-left: -2px; */
+
+        }
+
+        .sub-menu{
+            display: flex;
+            flex-direction: column;
+            margin-left: -15px;
+        }
+
+        ul.sub-menu li{
+            margin-bottom: 7px;
+        }
+
+        .first-child:first-child{
+            margin-top: 10px;
+        }
+
+        ul.main-menu li:hover section{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1>Display none</h1>
+    <ul class="main-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">giới thiệu</a>
+            <ul class="sub-menu">
+                <li><a href="">Nguồn gốc</a></li>
+                <li><a href="">Xuất sứ</a></li>
+            </ul>
+        </li>
+        <li><a href="">Sản phẩm</a></li>
+        <li><a href="">About Me</a></li>
+    </ul> -->
+
+
+    <header>
+        <ul class="main-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Products</a>
+                <section>
+                    <ul class="sub-menu">
+                        <li class="first-child"><a href="">Shirt</a></li>
+                        <li><a href="">T-pain</a></li>
+                        <li><a href="">Sock</a></li>
+                    </ul>
+                </section>
+            </li>
+            <li><a href="">Me</a></li>
+        </ul>
+    </header>
+</body>
+</html>

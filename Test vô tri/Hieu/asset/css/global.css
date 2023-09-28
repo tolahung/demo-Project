@@ -1,0 +1,12 @@
+
+
+
+:root{
+    --text: #ffff;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    padding-left: 0;
+}
+
+body{
+    height: 2000px;
+}
+/* ------------------MEnu------------------------------- */
+
+nav{
+    background-color: #b5fe96;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+
+.menu-nav ul{
+    display: flex;
+}
+
+.menu-nav ul li{
+    margin-right: 50px;
+    list-style: none;
+}
+
+.menu-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+} 
+
+.img-nav a img{
+ transition: all 0.2s ease;
+}
+
+.img-nav a img:hover{
+    transform: scale(1.2);
+}
+
+.menu-nav ul li a:hover{
+    color: red;
+}
+
+/* -----Img-------- */
+.img-nav{
+    width: 150px;
+}
+
+.img-nav img{
+    max-width: 100%;
+}
+
+
+/* ------------------content------------------------------- */
+
+
+#wrapper{
+    background-color: #ffffff;
+    width: 960px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    top:150px;
+    margin-bottom: 150px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+ul.list-product{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+ul.list-product li{
+    list-style: none;
+    flex-basis: 33.33%;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+ul.list-product li .product-item{
+    margin: 0 15px;
+    border: 1px solid rgb(236, 236, 236);
+    box-shadow: 0 5px 8px rgb(202, 202, 202);
+}
+
+
+/* -------------------PRODUCT------------------------ */
+
+.product-item{
+    border-radius: 10px;
+}
+
+/* img */
+
+a.link-item{
+    width: 100%;
+    position: relative;
+}
+
+a.link-item img{
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+a.link-item img:hover{
+    transform: scale(1.1);
+}
+
+.sale{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+/* price */
+
+.product-price{
+    font-size: 15px;
+    font-weight: 800;
+    color: #f1b023;
+    text-align: center;
+    margin: 0;
+}
+
+.price {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+/* description */
+
+.product-des{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+/* submit */
+
+button{
+    border: none;
+    margin:20px 0;
+    position: relative;
+    left: 33%;
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px rgb(109, 109, 110);
+}
+
+button:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+/* --------------------WRAPPER-SLIDE-------------------------- */
+

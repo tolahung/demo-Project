@@ -1,0 +1,127 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+    --bc: #333333;
+    --primary: #FF6633;
+    --secondary: #CC6600;
+    --text: white;
+}
+
+#wrapper{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    margin: 50px auto;
+    background-color: var(--bc);
+}
+
+#dropdown{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    /* margin: 50px auto; */
+    top: 50px;
+    left: 40px;
+    /* background-color: var(--text); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown_select{
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 60px;
+    top: 30px;
+    left: 10px;
+    background-color: var(--primary);
+    /* border-radius: 5px; */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-between;
+    color: var(--text);
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+/* .list{
+    width: 300px;
+} */
+
+.dropdown_list{
+    width: 300px;
+    height: auto;
+    /* overflow: hidden; */
+    position: absolute;
+    top: 60px;
+    margin: 16px 0;
+    left: 0;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.dropdown_select:hover .dropdown_list{
+    display: block;
+}
+
+.dropdown_list:before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    left: 0;
+    right: 0;
+    background-color: #ff0000;
+    transform: translateY(-100%);
+    background-color: transparent;
+}
+
+.dropdown_list li{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border-radius: 10px; */
+    background-color: var(--primary);
+    padding:20px;
+    color: aliceblue;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.dropdown_list li:hover{
+    background-color: var(--secondary);
+}
+
+.dropdown_list li:first-child{
+    position: relative;
+}
+
+
+/* tao mui ten -> neo vao thẻ li đàu tiên */
+.dropdown_list li:first-child:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--primary);
+    transform: translateY(-100%);
+    transition: all 0.4s linear;
+}
+
+.dropdown_list li:first-child:hover:before{
+    border-bottom-color:var(--secondary) ;
+}
+

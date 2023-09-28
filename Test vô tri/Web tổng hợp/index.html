@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap list</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.css">
+
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+</head>
+<body>
+
+
+
+    <!-- ----------------MENU--------------------------------->
+    <nav>
+        <div class="img-nav">
+            <a href="#">
+                <img src="./image/vietmy2.png" alt="">
+            </a>
+        </div>
+
+        <div class="menu-nav">
+            <ul>
+                <li><a href="#" class="link-item">Home</a></li>
+                <li><a href="#" class="link-item">About us</a></li>
+                <li><a href="#" class="link-item">Products</a></li>
+                <li><a href="#" class="link-item">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ---------------Content---------------------------------->
+
+    <div id="wrapper">
+        <h1>Lastest product</h1>
+        <ul class="list-product">
+            <li>
+                <div class="product-item">
+                   <a href="#" class="link-item">
+                    <img src="./image/1.webp" alt="">
+                    </a>
+                    <p class="product-price">Giá tiền: <span class="price">100.000 VNĐ</span></p>
+
+                    <div class="product-des">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+
+                    <button>Mua ngay</button>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="#" class="link-item">
+                        <div class="sale">
+                            <img class="sale-image" src="./image/sale-tag.png" alt="">
+                        </div>
+                        <img src="./image/11.webp" alt="">
+                    </a>
+                     <p class="product-price">Giá tiền: <span class="price">100.000 VNĐ</span></p>
+ 
+                     <div class="product-des">
+                         Lorem ipsum dolor sit amet.
+                     </div>
+ 
+                     <button>Mua ngay</button>
+                 </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="#" class="link-item">
+                     <img src="./image/12.webp" alt="">
+                     </a>
+                     <p class="product-price">Giá tiền: <span class="price">100.000 VNĐ</span></p>
+ 
+                     <div class="product-des">
+                         Lorem ipsum dolor sit amet.
+                     </div>
+ 
+                     <button>Mua ngay</button>
+                 </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="#" class="link-item">
+                     <img src="./image/2.webp" alt="">
+                     </a>
+                     <p class="product-price">Giá tiền: <span class="price">100.000 VNĐ</span></p>
+ 
+                     <div class="product-des">
+                         Lorem ipsum dolor sit amet.
+                     </div>
+ 
+                     <button>Mua ngay</button>
+                 </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="#" class="link-item">
+                     <img src="./image/3.webp" alt="">
+                     </a>
+                     <p class="product-price">Giá tiền: <span class="price">100.000 VNĐ</span></p>
+ 
+                     <div class="product-des">
+                         Lorem ipsum dolor sit amet.
+                     </div>
+ 
+                     <button>Mua ngay</button>
+                 </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="#" class="link-item">
+                        <div class="sale">
+                            <img class="sale-image" src="./image/sale-tag.png" alt="">
+                        </div>
+                     <img src="./image/8.webp" alt="">
+                     </a>
+                     <p class="product-price">Giá tiền: <span class="price">100.000 VNĐ</span></p>
+ 
+                     <div class="product-des">
+                         Lorem ipsum dolor sit amet.
+                     </div>
+ 
+                     <button>Mua ngay</button>
+                 </div>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+        });
+    </script>
+
+<div class="owl-carousel owl-theme">
+
+    <div class="item">
+        <a href="#"><img src="./image/1.webp" alt=""></a>
+    </div>
+    <div class="item">
+        <a href="#"><img src="./image/11.webp" alt=""></a>
+    </div>
+    <div class="item">
+        <a href="#"><img src="./image/12.webp" alt=""></a>
+    </div>
+    <div class="item">
+        <a href="#"><img src="./image/2.webp" alt=""></a>
+    </div>
+    <div class="item">
+        <a href="#"><img src="./image/3.webp" alt=""></a>
+    </div>
+    <div class="item">
+        <a href="#"><img src="./image/8.webp" alt=""></a>
+    </div>
+
+
+</div>
+ 
+    
+</body>
+</html>

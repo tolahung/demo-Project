@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-parent{
+            background-color: #f58888;
+            width: 400px;
+            height: 200px;
+            position: relative;
+        }
+
+        .box-child{
+            background-color: #88f591;
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        button{
+            position: absolute;
+            bottom: 20px;
+            left: 36%;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Position absolute</h1>
+    <div class="box-parent">
+        <div class="box-child">
+            <button>click</button>
+        </div>
+    </div>
+</body>
+</html>

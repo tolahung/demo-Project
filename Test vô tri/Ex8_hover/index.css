@@ -1,0 +1,60 @@
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 330px;
+    height: 400px;
+    margin: 0 auto ;
+    border: 1px solid rgb(202, 202, 202);
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-card{
+    width: 100%;
+}
+
+.img-card img{
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+p{
+    text-align: center;
+}
+
+/* --------------------POSITION BUY-------------------------------- */
+
+.buy{
+    background-color: #ffa631;
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+}
+
+.buy p{
+    padding: 10px 0;
+    margin: 0;
+
+}
+/* -----------------------HOVER------------------------------ */
+
+.container:hover img{
+    transform: scale(1.2);
+}
+
+.container:hover .buy{
+    bottom: 0px;
+    transition: all 0.4s ease;
+}
+
+.container:hover{
+    border: 1px solid #ffa631;
+}

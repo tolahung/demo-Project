@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+
+    <style>
+        .wrapper{
+            width: 960px;
+            height: auto;
+            background-color: gray;
+            margin: 0 auto;
+        }
+
+
+        /* ---------------------Header------------------------------- */
+        .header{
+             background-color: #60eb77;
+        }
+
+        .header p{
+            text-align: center;
+            padding: 15px 0;
+            margin: 0;
+        }
+        
+        
+        /* ---------------------Body------------------------------- */
+        
+        
+        .content{
+            width: 600px;
+            min-height: 600px;
+            background-color: #cccccc;
+            float: left;
+        }
+        .side-bar{
+            width:360px;
+            min-height: 600px;
+            background-color: #5f5f5f;
+            /* float: left; */
+        }
+        
+       /* ---------------------Footer------------------------------- */
+       
+       .footer{
+           background-color: #60eb77;
+        }
+        
+        .footer p{
+            text-align: center;
+            padding: 15px 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p>Layout web 2 Column-Float Css</p>
+        </div>
+
+        <div class="container">
+            <div class="content">
+
+            </div>
+
+            <div class="side-bar">
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Unitop.vn</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+        <div class="flex-item item-3">3</div>
+        <div class="flex-item item-4">4</div>
+    </div>
+</body>
+</html>
